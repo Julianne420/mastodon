@@ -949,8 +949,16 @@ body.admin {
   @include win95-border-slight-inset();
 }
 
-.compose-form .autosuggest-textarea__textarea {
+.compose-form .autosuggest-textarea {
   border-bottom:0px;
+}
+
+.compose-form .autosuggest-textarea__suggestions {
+  background:$win95-tooltip-yellow;
+}
+
+.compose-form .autosuggest-textarea__suggestions__item.selected {
+  background:$win95-tooltip-yellow;
 }
 
 .compose-form__uploads-wrapper {
@@ -1214,6 +1222,9 @@ body.admin {
 
   height: unset !important;
 
+.getting-started__trends h4 {
+  color: black;
+}
   .navigation-bar {
     padding-left: 45px;
   }
@@ -1377,57 +1388,96 @@ body.admin {
   display:none;
 }
 
+.layout-single-column .navigation-panel {
+  background: $win95-bg;
+  height: auto;
+  box-shadow: inset -1px -1px 0 #000,inset -2px -2px 0 grey;
+}
+
 .column-link[href="/web/timelines/home"] {
   background-image: url("../images/win95/icon_home.png");
-  &:hover { background-image: url("../images/win95/icon_home.png"); }
+  &:hover { background-image: url("../images/win95/icon_home.png");  }
+  background-repeat:no-repeat;
+  background-position: 36px 50%;
 }
 .column-link[href="/web/notifications"] {
   background-image: url("../images/win95/icon_notifications.png");
-  &:hover { background-image: url("../images/win95/icon_notifications.png"); }
+  &:hover { background-image: url("../images/win95/icon_notifications.png");  }
+  background-repeat:no-repeat;
+  background-position: 36px 50%;
 }
 .column-link[href="/web/timelines/public"] {
   background-image: url("../images/win95/icon_public.png");
-  &:hover { background-image: url("../images/win95/icon_public.png"); }
+  &:hover { background-image: url("../images/win95/icon_public.png");  }
+  background-repeat:no-repeat;
+  background-position: 36px 50%;
 }
 .column-link[href="/web/timelines/public/local"] {
   background-image: url("../images/win95/icon_local.png");
-  &:hover { background-image: url("../images/win95/icon_local.png"); }
+  &:hover { background-image: url("../images/win95/icon_local.png");  }
+  background-repeat:no-repeat;
+  background-position: 36px 50%;
 }
 .column-link[href="/web/timelines/direct"] {
   background-image: url("../images/win95/icon_direct.png");
-  &:hover { background-image: url("../images/win95/icon_direct.png"); }
+  &:hover { background-image: url("../images/win95/icon_direct.png");  }
+  background-repeat:no-repeat;
+  background-position: 36px 50%;
 }
 .column-link[href="/web/pinned"] {
   background-image: url("../images/win95/icon_pin.png");
-  &:hover { background-image: url("../images/win95/icon_pin.png"); }
+  &:hover { background-image: url("../images/win95/icon_pin.png");
+  }
 }
 .column-link[href="/web/favourites"] {
-  background-image: url("../images/win95/icon_likes.png");
-  &:hover { background-image: url("../images/win95/icon_likes.png"); }
+  background-image: url("../images/win95/icon_lamp.png");
+  &:hover { background-image: url("../images/win95/icon_lamp.png");  }
+  background-repeat:no-repeat;
+  background-position: 36px 50%;
 }
 .column-link[href="/web/lists"] {
   background-image: url("../images/win95/icon_lists.png");
-  &:hover { background-image: url("../images/win95/icon_lists.png"); }
+  &:hover { background-image: url("../images/win95/icon_lists.png");  }
+  background-repeat:no-repeat;
+  background-position: 36px 50%;
 }
 .column-link[href="/web/follow_requests"] {
   background-image: url("../images/win95/icon_follow_requests.png");
-  &:hover { background-image: url("../images/win95/icon_follow_requests.png"); }
+  &:hover { background-image: url("../images/win95/icon_follow_requests.png");
+  }
 }
 .column-link[href="/web/blocks"] {
   background-image: url("../images/win95/icon_blocks.png");
-  &:hover { background-image: url("../images/win95/icon_blocks.png"); }
+  &:hover { background-image: url("../images/win95/icon_blocks.png");
+  }
 }
 .column-link[href="/web/domain_blocks"] {
   background-image: url("../images/win95/icon_domain_blocks.png");
-  &:hover { background-image: url("../images/win95/icon_domain_blocks.png"); }
+  &:hover { background-image: url("../images/win95/icon_domain_blocks.png");
+  }
 }
 .column-link[href="/web/mutes"] {
   background-image: url("../images/win95/icon_mutes.png");
-  &:hover { background-image: url("../images/win95/icon_mutes.png"); }
+  &:hover { background-image: url("../images/win95/icon_mutes.png");
+  }
 }
 .column-link[href="/settings/preferences"] {
   background-image: url("../images/win95/icon_settings.png");
-  &:hover { background-image: url("../images/win95/icon_settings.png"); }
+  &:hover { background-image: url("../images/win95/icon_settings.png");  }
+  background-repeat:no-repeat;
+  background-position: 36px 50%;
+}
+.column-link[href="/web/bookmarks"] {
+  background-image: url("../images/win95/icon_likes.png");
+  &:hover { background-image: url("../images/win95/icon_likes.png");  }
+  background-repeat:no-repeat;
+  background-position: 36px 50%;
+}
+.column-link[href="/relationships"] {
+  background-image: url("../images/win95/icon_relationships.png");
+  &:hover { background-image: url("../images/win95/icon_relationships.png");  }
+  background-repeat:no-repeat;
+  background-position: 36px 50%;
 }
 
 .getting-started__footer ul li a[href="/web/keyboard-shortcuts"] {
@@ -1453,6 +1503,18 @@ body.admin {
 .getting-started__footer ul li a[href="/auth/sign_out"] {
   background-image: url("../images/win95/icon_logout.png");
   &:hover { background-image: url("../images/win95/icon_logout.png"); }
+}
+.getting-started__footer ul li a[href="/auth/edit"] {
+  background-image: url("../images/win95/icon_keys.png");
+  &:hover { background-image: url("../images/win95/icon_keys.png"); }
+}
+.getting-started__footer ul li a[href="https://joinmastodon.org/apps"] {
+  background-image: url("../images/win95/icon_apps.png");
+  &:hover { background-image: url("../images/win95/icon_apps.png"); }
+}
+.getting-started__footer ul li a[href="/settings/applications"] {
+  background-image: url("../images/win95/icon_chip.png");
+  &:hover { background-image: url("../images/win95/icon_chip.png"); }
 }
 
 .column .static-content.getting-started {
@@ -1637,7 +1699,7 @@ body.admin {
     /* i don't know what's going on with the inline
        styles someone should look at the react code */
     height: 25px !important;
-    width: 28px !important;
+    width: 40px !important;
     box-sizing: border-box;
 }
 
