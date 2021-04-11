@@ -36,6 +36,7 @@ zh-TW:
         phrase: 無論是嘟文的本文或是內容警告都會被過濾
         scopes: 允許讓應用程式存取的 API。 若您選擇最高階範圍，則無須選擇個別項目。
         setting_aggregate_reblogs: 請勿顯示最近已被轉嘟之嘟文的最新轉嘟（只影響最新收到的嘟文）
+        setting_default_federation: 除非在撰寫時手動更改，否則嘟文不會發送到其他主機
         setting_default_sensitive: 敏感媒體預設隱藏，且按一下即可重新顯示
         setting_display_media_default: 隱藏標為敏感的媒體
         setting_display_media_hide_all: 總是隱藏所有媒體
@@ -116,6 +117,7 @@ zh-TW:
         setting_auto_play_gif: 自動播放 GIF 動畫
         setting_boost_modal: 在轉嘟前先詢問我
         setting_default_language: 嘟文語言
+        setting_default_federation: 默認允許我的嘟文發送到其他主機
         setting_default_privacy: 嘟文可見範圍
         setting_default_sensitive: 總是將媒體標記為敏感內容
         setting_delete_modal: 刪除嘟文前先詢問我
