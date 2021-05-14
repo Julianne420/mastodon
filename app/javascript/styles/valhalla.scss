@@ -315,7 +315,7 @@ html {
   opacity: 0.9;
 }
 
-body, .landing-page, .public-layout {
+body {
   background-image: url("https://va-11.com/system/site_uploads/files/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -324,7 +324,7 @@ body, .landing-page, .public-layout {
 }
 
 @media only screen and (max-width: 768px) {
-  body, .landing-page, .public-layout {
+  body {
     background-image: url("https://va-11.com/system/site_uploads/files/background-mobile.jpg");
   }
 }
@@ -339,7 +339,7 @@ body, .landing-page, .public-layout {
   opacity: 0.8;
 }
 
-.public-layout .public-account-header__tabs__tabs {
+.public-layout .public-account-header__bar::before {
   background: $ui-transparent-yet-color;
 }
 
