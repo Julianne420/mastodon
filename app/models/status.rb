@@ -166,6 +166,10 @@ class Status < ApplicationRecord
   def local_only?
     local_only
   end
+  
+  def in_reply_to_local_account?
+    reply? && thread&.account&.local?
+  end
 
   def reblog?
     !reblog_of_id.nil?
