@@ -9,6 +9,7 @@ $ui-link-text-color: #e02e6a;
 
 $about-page-text: lighten($ui-base-color, 50%);
 
+$ui-transparent-highlight-color: #e02e6a0d;
 $ui-transparent-color: #0f0f0fcc; // darker
 $ui-transparent-alt-color: #1b1b1bcc; //lighter
 $ui-transparent-yet-color: #1b1b1be6; //lighter and less transparent
@@ -416,6 +417,10 @@ body {
 
 .getting-started__footer {
   margin-bottom: 35px;
+}
+
+.picture-in-picture__footer, .picture-in-picture__header {
+  background: $ui-transparent-highlight-color;
 }
 
 .landing__grid {
