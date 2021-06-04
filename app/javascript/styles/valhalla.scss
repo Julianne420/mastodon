@@ -317,7 +317,7 @@ html {
 }
 
 body {
-  background-image: url("https://va-11.com/system/site_uploads/files/background.jpg");
+  background-image: url('../images/valhalla/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -326,7 +326,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   body {
-    background-image: url("https://va-11.com/system/site_uploads/files/background-mobile.jpg");
+    background-image: url('../images/valhalla/background-mobile.jpg');
   }
 }
 
@@ -433,4 +433,47 @@ body {
 
 .account__section-headline {
   background-color: rgba(17,17,17,0.9);
+}
+
+.landing__brand {
+  background: #0f0f0f99 url('../images/valhalla/logo_full.png') no-repeat center/55% auto !important;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.public-layout .header .brand {
+  background: transparent url('../images/valhalla/logo_full.png') no-repeat center/100% auto !important;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -4px;
+}
+
+.logo-container h1 a {
+  background: transparent url('../images/valhalla/logo_full.png') no-repeat center/100% auto !important;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sidebar__toggle__logo {
+  background: transparent url('../images/valhalla/logo_full.png') no-repeat left/35% auto !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 10px;
+  margin-top: -4px;
+}
+
+.landing__brand svg, .public-layout .header .brand svg, .logo-container h1 svg, .admin-wrapper .sidebar__toggle__logo svg, .brand__tagline {
+  display: none;
 }
